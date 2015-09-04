@@ -1,0 +1,24 @@
+<head>
+  <title>autorama</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  
+  {{> pista}}
+  
+</body>
+
+<template name="pista">
+  <div id="pista" class="pista">
+    {{#each  faixas}}
+    <div class="faixa">
+      <div id="carro-{{id}}" class="carro"></div>
+    </div>
+    {{ /each }}
+  </div>
+  <br><br>
+  <button class="run">Run!</button>
+  <br><br>
+  <button class="reset">Reset!</button>
+</template>
